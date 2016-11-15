@@ -10,9 +10,9 @@ angular.module("NgStox", ["ngRoute", "ui.bootstrap"])
 
   .factory("RootFactory", ($http) => {
 
-    const httpget = $http.get("http://localhost:8000/deadstox");
-    const Closets = $http.get("http://localhost:8000/deadstox/closets")
-    const Sneakers = $http.get("http://localhost:8000/deadstox/sneakers")
+    const httpget = $http.get("http://sneakrs.herokuapp.com/deadstox");
+    const Closets = $http.get("http://sneakrs.herokuapp.com/deadstox/closets")
+    const Sneakers = $http.get("http://sneakrs.herokuapp.com/deadstox/sneakers")
 
     return {
       getRoot: () => {
@@ -33,14 +33,14 @@ angular.module("NgStox", ["ngRoute", "ui.bootstrap"])
     return {
       postNewCloset: (closetsInfo) => {
         console.log("closetsInfo = ", closetsInfo)
-        return $http.post("http://localhost:8000/deadstox/closets/", closetsInfo)
+        return $http.post("http://sneakrs.herokuapp.com/deadstox/closets/", closetsInfo)
         .then(
           res => console.log("res = ", res.data)
         )
       },
       postNewSneaker: (sneakersInfo) => {
         console.log("sneakersInfo = ", sneakersInfo)
-        return $http.post("http://localhost:8000/deadstox/sneakers/", sneakersInfo)
+        return $http.post("http://sneakrs.herokuapp.com/deadstox/sneakers/", sneakersInfo)
         .then(
           res => console.log("res = ", res.data)
         )
