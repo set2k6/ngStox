@@ -1,0 +1,70 @@
+
+<div ng-controller="View">
+    <h1>{{ title }}</h1>
+
+    <!-- <div class="container-fluid">
+        <div class="row">
+            <div class="col col-xs-4"> -->
+
+                    <div class="container">
+                        <label>Closets:</label>
+                        <select ng-change="displayClosetChoice(closetSel)" class="clstSel" ng-model='closetSel' ng-options='closet.name for closet in closets'>
+                        </select>
+                    </div>
+
+
+                    <div class="container">
+                        <h2>{{closetSel.name}}</h2>
+                        <p class="tablep">Total_Retail_Value: ${{currentCloset.total_retail_value}} | Total_Resale_Value: ${{currentCloset.total_resale_value}} | Total_Profit: <span>${{currentCloset.total_profit}}</span></p>
+                        <table class="table table-hover table-condensed table-bordered">
+                        <thead>
+                          <tr>
+                            <th>Sneaker_Name</th>
+                            <th>Image</th>
+                            <th>Brand</th>
+                            <th>Release_Date</th>
+                            <th>Purchase_Date</th>
+                            <th>Retail_Price</th>
+                            <th>Resale_Value</th>
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="thover" ng-repeat="sneakers in closetSel.sneakers">
+                            <td>{{sneakers.name}}</td>
+                            <td><img src="{{sneakers.images}}" alt="sneaker.img"></td>
+                            <td>{{sneakers.brand}}</td>
+                            <td>{{sneakers.release_date}}</td>
+                            <td>{{sneakers.purchase_date}}</td>
+                            <td>${{sneakers.retail_price}}</td>
+                            <td>${{sneakers.resale_value}}</td>
+                            <td><button class="btn btn-danger" data-ng-click="deleteItem(sneakers)">Delete</button></td>
+                          </tr>
+                         <!--  <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                            <td>mary@example.com</td>
+                            <td>mary@example.com</td>
+                            <td>mary@example.com</td>
+                            <td>mary@example.com</td>
+                            <td>mary@example.com</td>
+                          </tr> -->
+                        </tbody>
+                      </table>
+                    </div>
+                   <!--  <p>
+                        <label>Sneakers:</label>
+                        <select name="Sneakers" class="snkrSel">
+                            <option ng-repeat="sneaker in sneakers" value="{{sneaker.name}}">{{sneaker.name}}</option>
+                        </select>
+                    </p>
+                    <div class="filt2">
+                        <button ng-click="orderBySneakers()">Filter Sneakers</button>
+                    </div> -->
+                    <!-- </div> -->
+                    <!-- </div> -->
+                <!-- </article> -->
+     <!--        </div>
+        </div>
+    </div> -->

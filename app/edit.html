@@ -1,0 +1,40 @@
+<h1 class="addTitle">{{ title }}</h1>
+<div>
+    <article class="editInventory">
+
+        <!-- Closets -->
+        <!-- <h5>1. Create A Closet</h5> -->
+        <div class="editDiv1">
+            Closets:<!-- <br> -->
+            <input name="closets" type="text" ng-model="selectedCloset.name" class="editInput" placeholder="Closet Name">
+
+            <button ng-click="createCloset(selectedCloset)" class="editButton">Create Closet</button>
+        </div><br>
+
+
+        <!-- Sneakers -->
+<!--         <h5>2. Enter Sneaker Info and Choose Closet</h5>
+ -->        <div class="editDiv2">
+            Sneakers:<!-- <br> -->
+            <input type="text" ng-model="selectedSneaker.name" class="ediv2 upperEditInput" placeholder="Sneaker Name">
+            <select ng-model="selectedSneaker.brand" class="ediv2 upperEditInput">
+            <option value="" selected>Select Brand</option>
+            <option value="Nike">Nike</option>
+            <option value="Adidas">Adidas</option>
+            <option value="Jordan">Jordan</option>
+            <option value="Vans">Vans</option>
+            </select>
+            <input id="fileUp" class="ediv2" ng-model="selectedSneaker.picture" id="stubborn" type="file" accept="images/*" />
+            <input type="text" ng-model="selectedSneaker.release_date" class="ediv2 upperEditInput" placeholder="Release_Date xx/xx/xxxx">
+            <input type="text" ng-model="selectedSneaker.purchase_date" class="ediv2 upperEditInput" placeholder="Purchase_Date xx/xx/xxxx">
+            <input type="number" ng-model="selectedSneaker.retail_price" class="ediv2 upperEditInput" placeholder="Retail_Price $xxx.xx">
+            <input type="number" ng-model="selectedSneaker.resale_value" class="ediv2 upperEditInput" placeholder="Resale_Value $xxx.xx">
+            Existing Closet:
+            <select ng-model="selectedSneaker.closet">
+                <option ng-repeat="closet in closetList.results" value="{{closet.url}}">{{closet.name}}</option>
+            </select>
+            <button ng-click="createSneaker(selectedSneaker)" class="editButton">Create Sneaker</button>
+        </div><br>
+
+    </article>
+</div>

@@ -1,0 +1,95 @@
+.navbar-fixed-top {
+    background-color: #54428E;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #EEEEEE;
+}
+
+.nav-text {
+    color: #E8EEF2;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    /*text-shadow: 2px 2px #EEEEEE;*/
+}
+
+/*.nav-text > span {
+    float: right;
+    margin-right: 400px;
+    -webkit-transform: rotate(45deg);
+}*/
+
+.navbut {
+    display: inline;
+    float: right;
+    background-color: #EE6C4D;
+}
+
+#navb1 {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+.container-fluid {
+    margin: auto;
+    width: 76%;
+    padding: 1%;
+}
+
+.table {
+    background-color: #E8EEF2;
+    border: solid 3px #EE6C4D;
+    margin: auto;
+   /* width: 75%;
+    padding: 1%;*/
+}
+
+th {
+    text-align: center;
+}
+
+.tablep {
+    text-align: center;
+}
+
+.tablep > span {
+    color: green;
+}
+
+.editDiv1{
+    background-color: #E8EEF2;
+    text-align: center;
+    border: solid 3px #EE6C4D;
+    width: 40%;
+    padding: 1%;
+    margin: auto;
+}
+
+.editDiv2 {
+    text-align: center;
+    border: solid 3px #EE6C4D;
+    background-color: #E8EEF2;
+    padding: 1%;
+    margin: auto;
+    width: 35%;
+}
+
+#fileUp {
+
+}
+
+.ediv2 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+    width: 75%;
+}
+
+.addTitle {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-shadow: 2px 2px #EEEEEE;
+}

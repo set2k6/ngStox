@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>DEADSTOX!</title>
+  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="app/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
+<!-- dependency scripts -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../bower_components/angular-route/angular-route.min.js"></script>
+<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+<script src="../bower_components/firebase/firebase.js"></script>
+<!-- our scripts -->
+<script src="app/main.js"></script>
+<script src="app/view.js"></script>
+<script src="app/edit.js"></script>
+</head>
+<body>
+
+<!-- NOTE NOTE NOTE! in order to serve this app, run http-server from the root folder (deadstox) and add /ngstox/ to the URL in your browser. This is because bower components are a sibling folder to russell, so we need to serve at the root in order to be able to access them.  -->
+
+  <div ng-app="NgStox">
+    <div ng-view></div>
+  </div>
+
+
+</body>
+</html>

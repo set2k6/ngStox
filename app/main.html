@@ -1,0 +1,11 @@
+<nav class="navbar-fixed-top">
+    <h1 class="nav-text">Deadsto<span>x</span></h1>
+    <button id="navb1" ng-disabled="view" ng-click="view=!view" class="btn btn-md btn-primary navbut">View Closets</button>
+    <button id="navb2" ng-disabled="!view" ng-click="view=!view" class="btn btn-md btn-primary navbut">Add Sneakers</button>
+</nav>
+
+<div style="margin-top: 150px" ng-if="view"  ng-include="'app/view.html'"></div>
+<div style="margin-top: 150px" ng-if="!view" ng-controller="Edit" ng-include="'app/edit.html'"></div>
+
+
+
